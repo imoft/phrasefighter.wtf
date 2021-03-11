@@ -1,0 +1,140 @@
+/* Spinner */
+
+.round-btn {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.round-btn.padding {
+  margin: 20px;
+}
+
+.refresh-symbol {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: solid 6px;
+  border-color: white;
+}
+
+.refresh-symbol::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  border-left: solid 6px;
+  border-bottom: solid 6px;
+  border-color: white;
+  transform-origin: 50% 50%;
+  transform: rotate(-45deg) translateY(-5px) translateX(-12px);
+}
+
+.refresh-symbol::after {
+  content: "";
+  height: 20px;
+  width: 20px;
+  border-left: solid 6px;
+  border-top: solid 6px;
+  border-color: white;
+  transform-origin: 50% 50%;
+  transform: rotate(45deg) translateX(16px);
+}
+
+.black-lines.refresh-symbol {
+  border-color: black;
+}
+
+.black-lines.refresh-symbol::before {
+  border-color: black;
+}
+
+.black-lines.refresh-symbol::after {
+  border-color: black;
+}
+
+.grey-lines.refresh-symbol {
+  border-color: #CCCCCC;
+}
+
+.grey-lines.refresh-symbol::before {
+  border-color: #CCCCCC;
+}
+
+.grey-lines.refresh-symbol::after {
+  border-color: #CCCCCC;
+}
+
+.round-btn.active-red {
+  transition: .3s ease;
+}
+
+.round-btn.active-red:hover {
+  background-color: #EE2E19;
+  transition: .3s ease;
+  cursor: pointer;
+}
+
+.spin {
+  -webkit-animation: spin 5s infinite linear;
+  -moz-animation: spin 5s infinite linear;
+  -ms-animation: spin 5s infinite linear;
+}
+
+.spin:link {
+}
+
+.spin:visited {
+}
+
+.spin:hover {
+}
+
+.spin:after {
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+/* Jumper */
+
+.jumper {
+  height: 30%;
+}
+
+.jump-symbol {
+  width: 20px;
+  height: 20px;
+  border-radius: 50% 50%;
+  margin: 0px 10px;
+}
+
+.jump-forward {
+  -webkit-animation: jump 2s infinite alternate;
+  -moz-animation: jump 2s infinite alternate;
+  -ms-animation: jump 2s infinite alternate;
+}
+
+.jump-backward {
+  -webkit-animation: jump 2s infinite alternate-reverse;
+  -moz-animation: jump 2s infinite alternate-reverse;
+  -ms-animation: jump 2s infinite alternate-reverse;
+}
+
+@keyframes jump {
+  from {
+    transform: translateY(8px);
+  }
+  to {
+    transform: translateY(-8px);
+  }
+}
+

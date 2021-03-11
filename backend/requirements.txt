@@ -1,0 +1,11 @@
+spacy===2.2.0
+scipy
+https://github.com/explosion/spacy-models/releases/download/en_core_web_md-2.2.0/en_core_web_md-2.2.0.tar.gz#egg=en_core_web_md
+starlette===0.14.0
+uvicorn
+ujson
+beautifulsoup4
+django
+firebase-admin
+google-cloud-firestore
+markovify

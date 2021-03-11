@@ -1,0 +1,74 @@
+.tutorial {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px;
+}
+
+.tutorial.light {
+  color: #CCCCCC;
+  border-color: #CCCCCC;
+}
+
+.tutorial.dark {
+  color: black;
+  border-color: black;
+}
+
+.tutorial > * {
+  margin: 0 5px;
+}
+
+.tutorial-btn {
+  width: auto;
+  height: 30px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  border: solid 1.5px;
+  border-radius: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 8px;
+}
+
+.tutorial-btn.space {
+  margin: 0 30px 0 10px;
+}
+
+.tutorial-btn.space::before {
+  content: "space";
+  text-transform: uppercase;
+  line-height: 18px;
+}
+
+.tutorial-btn.left::before {
+  content: "►";
+  transform: scaleX(-1);
+}
+
+.tutorial-btn.right::before {
+  content: "►";
+  line-height: 0;
+  letter-spacing: 0;
+}
+
+.tutorial-btn.top::before {
+  content: "▲";
+  line-height: 0;
+  letter-spacing: 0;
+}
+
+.tutorial-btn.top {
+  margin-bottom: 5px;
+  line-height: 0;
+  letter-spacing: 0;
+}
+
+.tutorial-btn.bottom::before {
+  content: "▼";
+  line-height: 0;
+  letter-spacing: 0;
+}
+

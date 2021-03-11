@@ -1,0 +1,133 @@
+.winner-sign {
+  background: linear-gradient(138deg, #c5c5c5, #ffffff, #ee2e19);
+  padding: 10px 20px 5px 28px;
+  background-size: 700% 700%;
+  -webkit-animation: gradientRoll 4s ease infinite;
+  -moz-animation: gradientRoll 4s ease infinite;
+  animation: gradientRoll 4s ease infinite;
+  margin-top: 30px;
+}
+
+@keyframes gradientRoll {
+  0% {
+    background-position: 18% 0%;
+  }
+  50% {
+    background-position: 83% 100%;
+  }
+  100% {
+    background-position: 18% 0%;
+  }
+}
+
+.wiggle {
+  -webkit-animation: wiggle 1.5s ease alternate infinite;
+  -moz-animation: wiggle 1.5s ease alternate infinite;
+  animation: wiggle 1.5s ease alternate infinite;
+  z-index: 1;
+}
+
+@keyframes wiggle {
+  0%, 50%, 70% {
+    transform: rotate(-5deg);
+  }
+  60%, 100% {
+    transform: rotate(-8deg);
+  }
+}
+
+button span {
+  font-family: 'Times New Roman', serif;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.winner h3 {
+  font-size: 20px;
+  z-index: 1;
+}
+
+.winner .grey-bg {
+  padding: 10px;
+}
+
+.winner h1 {
+  font-weight: 900;
+}
+
+.winner .round-btn {
+  z-index: 3;
+}
+
+.winner .persona {
+  width: 160px;
+  height: 160px;
+  z-index: 2;
+  margin-left: 20px;
+}
+
+.winner-face {
+  border: solid 4px black;
+}
+
+.winner .card {
+  max-width: 320px;
+  transform: rotate(10deg);
+  z-index: 0;
+}
+
+.face.rotate {
+  transform: rotate(50deg);
+}
+
+.bounce {
+  -webkit-animation: bounce 1.5s reverse ease-out;
+  -moz-animation: bounce 1.5s reverse ease-out;
+  -ms-animation: bounce 1.5s reverse ease-out;
+  overflow: hidden;
+}
+
+.rotate {
+  -webkit-animation: rotate 1.5s ease-in;
+  -moz-animation: rotate 1.5s ease-in;
+  -ms-animation: rotate 1.5s ease-in;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(50deg);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-2vh);
+  }
+  20% {
+    transform: translateY(0vh);
+  }
+  35% {
+    transform: translateY(-3vh);
+  }
+  30% {
+    transform: translateY(0vh);
+  }
+  55% {
+    transform: translateY(-10vh);
+  }
+  60% {
+    transform: translateY(5vh);
+  }
+  100% {
+    transform: translateY(-120vh);
+  }
+}
+
